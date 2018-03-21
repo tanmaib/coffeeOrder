@@ -3,4 +3,5 @@
     <string name="Quantity">Quantity</string>
     <string name="Price">price</string>
     <string name="Order">order</string>
+    <string name="Output">Total: $ %1$d \nThank You!</string>
 </resources>

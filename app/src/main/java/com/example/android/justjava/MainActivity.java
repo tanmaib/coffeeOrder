@@ -10,6 +10,7 @@ package com.example.android.justjava;
 
 
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -55,7 +56,10 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
 
-        String priceMessage = "Total: $" + (noofcoffee*10) + "\nThank You!";
+        Resources res = getResources();
+        String priceMessage = res.getString(R.string.Output, noofcoffee*10);
+
+        //String priceMessage = "Total: $" + (noofcoffee*10) + "\nThank You!";
         displayMessage(priceMessage);
     }
 
